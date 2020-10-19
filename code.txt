@@ -1,0 +1,51 @@
+import java.util.Scanner;
+import java.util.Random;
+/**
+ * Class DiceGames
+ */
+public class DiceGames {
+  public static void main(String[] args) {
+
+    Scanner userInput = new Scanner(System.in);
+    
+    //This genarate number between 1 and 6
+    Random rand = new Random();
+    int num = rand.nextInt(6);
+    RandomNumber += 1;
+    int num = rand.nextInt(6) + 1;
+    
+    //Declare the String
+    String userChoose;
+    
+    userChoose = userInput.nextInt();
+    
+    //This ask the user to choose its gamemode
+    System.out.println("Choose your game mode:");
+    System.out.println("1.Easy mode (3 guess)");
+    System.out.println("2.normal mode (2 guesses)");
+    System.out.println("3.Hard mode (1 guesses)");
+    // = input("")//wrong
+    
+    if (gamemode == "1"){
+      if (userInput.nextInt() == num){
+        System.out.println("That's right! You win!");
+      } else {
+        System.out.println( " You got it Wrong " );
+      }
+    } else if (gamemode == "2"){
+      System.out.println("Guess a number between 1 and 6!");
+      if (userInput == num){
+        System.out.println("WOW! That's right! You Win!");
+        System.out.println("Out of guesses");
+      }
+    }
+    
+    else if (gamemode == "3"){
+      System.out.println("Guess a number between 1 and 6!");
+      if (userInput == num){
+        System.out.println("Yeeeh! That's right! You Win!");
+        System.out.println("Out of guesses");
+      }
+    }
+  }
+}
